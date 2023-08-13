@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>New Entry</title>
+</head>
+<body>
+    <div class="container">
+       <h2><%= entry.food %></h2>
+       <h3>Date: <%= entry.date %></h3>
+       <h3>Ounces: <%= entry.ounces %></h3>
+       <h3>What emotions does eating this food make you feel?</h3>
+       <p>
+        <%= entry.happy %><br/>
+        <%= entry.sad %><br/>
+        <%= entry.mad %><br/>
+        <%= entry.excited %><br/>
+        <%= entry.apathy %><br/>
+    </p>
+<p><b>Notes: </b><%= entry.note %><br/></p>
+    <a href="/" class="btn btn-secondary">All Entries</a>
+    <a href="/entries/edit/<%=entry.id %>" class="btn btn-info">Edit</a>
+</div>
+</body>
+</html>
