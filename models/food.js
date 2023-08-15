@@ -5,6 +5,9 @@ const FoodSchema = new mongoose.Schema(
     food: {
       type: String,
     },
+    water: {
+      type: String,
+    },
     ounces: {
       type: Number,
     },
@@ -15,6 +18,9 @@ const FoodSchema = new mongoose.Schema(
       type: String,
     },
     mad: {
+      type: String,
+    },
+    scared: {
       type: String,
     },
     excited: {

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>New Measurement</title>
+</head>
+<body>   
+    <div class="container">
+        <h1>Dopamine App</h1>
+        <a href="/food/new" class="btn btn-success">New Food</a>
+    <a href="/activity/new" class="btn btn-success">New Activity</a>
+    <a href="/measurements/new" class="btn btn-success">New Measurement</a>
+    <a href="/food" class="btn btn-success">Listed Foods</a>
+    <a href="/activity" class="btn btn-success">Listed Activities</a>
+    <a href="/measurements" class="btn btn-success">Listed Measurements</a>
+    <br>
+        <% measurements.forEach(measurement=> { %>
+            <div class="card mt-4">
+                <div class="card-body">
+       <p>Weight: <%= measurement.weight %></p>
+       <p>Bloodsugar: <%= measurement.bloodsugar %></p>
+       <p>Bloodpressure: <%= measurement.bloodpressure %></p>
+       <p>Oxygen: <%= measurement.oxygen %></p>
+       <p>Pulse: <%= measurement.pulse %></p>
+       <p>Hip (Inches): <%= measurement.hip %></p>
+       <p>Waist (Inches): <%= measurement.waist %></p>
+       <p>Chest (Inches): <%= measurement.inches %></p>
+       <p>Date: <%= measurement.date %></p>
+       <p>Note: <%= measurement.note %></p>
+       </div>
+       </div>
+       <% }) %>
+    <a href="/" class="btn btn-secondary">All Entries</a>
+
+</div>
+</body>
+</html>

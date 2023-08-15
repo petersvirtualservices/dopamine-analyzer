@@ -1,0 +1,30 @@
+<div class="form-group">
+    <label for="food">List Food Eaten</label>
+<input type="text" id="food" value="<%= food.food %>" name="food" class="form-control"/>
+<br/><br/>
+<label for="ounces">How Many Ounces?</label>
+<input type="text" id="ounces" name="ounces" value="<%= food.ounces %>" class="form-control"/>
+<br/><br/>
+<label>How Does This Food Make You Feel When You Are Done?</label>
+<br/>
+<input type="checkbox" id="happy" name="happy" value="Happy" /><label for="Happy">Happy</label><br/>
+<input type="checkbox" id="sad" name="sad" value="Sad" /><label for="Sad">Sad</label><br/>
+<input type="checkbox" id="mad" name="mad" value="Mad" /><label for="Mad">Mad</label><br/>
+<input type="checkbox" id="scared" name="scared" value="Scared" /><label for="Scared">Scared</label><br/>
+<input type="checkbox" id="excited" name="excited" value="Excited" /><label for="Excited">Excited</label><br/>
+<input type="checkbox" id="apathy" name="apathy" value="Apathy" /><label for="Apathy">Apathy</label>
+<br/><br/>
+<label for="water">Water Consumed (Ounces):</label>
+<input type="text" id="water" value="<%= food.water %>" name="water" class="form-control"/>
+<br/><br/>
+<label>When Did You Do This?</label>
+<br/>
+<input type="datetime-local" id="date" name="date" value="<%= food.date %>" class="form-control"/>
+<br/><br/>
+<label>Notes:</label>
+<br/>
+<textarea type="text" id="note" value="<%= food.note %>" name="note" class="form-control"></textarea>
+<br/><br/>
+</div>
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Submit</button>
