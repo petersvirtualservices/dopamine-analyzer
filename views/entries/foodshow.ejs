@@ -13,15 +13,12 @@
        <h2><%= food.food %></h2>
        <h3>Date: <%= food.date %></h3>
        <h3>Ounces: <%= food.ounces %></h3>
-       <h3>What emotions does eating this food make you feel?</h3>
-       <p>
-        <%= food.happy %><br/>
-        <%= food.sad %><br/>
-        <%= food.mad %><br/>
-        <%= food.excited %><br/>
-        <%= food.scared %><br/>
-        <%= food.apathy %><br/>
-    </p>
+       <h3><b>How Does This Make You Feel When You Begin?:</b>
+        <%= food.happy_begin %>, <%= food.sad_begin %>, <%= food.mad_begin %>, <%= food.scared_begin %>,<%= food.excited_begin %>, <%= food.apathy_begin %>
+       </h3>
+      <h3><b>How Does This Make You Feel When You Are Done?:</b>
+        <%= food.happy_done %>, <%= food.sad_done %>, <%= food.mad_done %>, <%= food.scared_done %>,<%= food.excited_done %>, <%= food.apathy_done %>
+      </h3>
     <h2>Water Consumed (Ounces): <%= food.water %></h2>
 <p><b>Notes: </b><%= food.note %><br/></p>
     <a href="/" class="btn btn-secondary">All Entries</a>

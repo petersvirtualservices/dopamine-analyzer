@@ -11,22 +11,40 @@ const FoodSchema = new mongoose.Schema(
     ounces: {
       type: Number,
     },
-    happy: {
+    happy_begin: {
       type: String,
     },
-    sad: {
+    sad_begin: {
       type: String,
     },
-    mad: {
+    mad_begin: {
       type: String,
     },
-    scared: {
+    scared_begin: {
       type: String,
     },
-    excited: {
+    excited_begin: {
       type: String,
     },
-    apathy: {
+    apathy_begin: {
+      type: String,
+    },
+    happy_done: {
+      type: String,
+    },
+    sad_done: {
+      type: String,
+    },
+    mad_done: {
+      type: String,
+    },
+    scared_done: {
+      type: String,
+    },
+    excited_done: {
+      type: String,
+    },
+    apathy_done: {
       type: String,
     },
     date: {
