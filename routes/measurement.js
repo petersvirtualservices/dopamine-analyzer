@@ -18,7 +18,8 @@ router.post('/', async (req, res) => {
   let measurement = new Measurement({
     weight: req.body.weight,
     bloodsugar: req.body.bloodsugar,
-    bloodpressure: req.body.bloodpressure,
+    systolicbp: req.body.systolicbp,
+    dystolicbp: req.body.dystolicbp,
     oxygen: req.body.oxygen,
     pulse: req.body.pulse,
     hip: req.body.hip,

@@ -8,8 +8,11 @@ const MeasurementSchema = new mongoose.Schema(
         bloodsugar: {
             type: Number,
         },
-        bloodpressure: {
-            type: String,
+        systolicbp: {
+            type: Number,
+        },
+        dystolicbp: {
+            type: Number,
         },
         oxygen: {
             type: Number,
