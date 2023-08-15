@@ -12,7 +12,7 @@ var methodOverride = require('method-override');
 
 
 var MongoClient = require('mongodb').MongoClient;
-const db = process.env.DATABASE;
+const db = process.env.DATABASE || "mongodb+srv://cpeters:FunnyG0y@analysis.roepm1h.mongodb.net/?retryWrites=true&w=majority";
 
 app.use(express.urlencoded({extended:false}));
 app.use('/food',foodRouter);
@@ -54,6 +54,7 @@ app.get('/measurements', async (req, res) => {
   res.render('entries/measurementindex', { measurements: measurements })
 })
 
-app.listen(8000 || process.env.PORT, () => {
-    console.log("server started on port 8000");
+var port = process.env.PORT || 8080;
+app.listen(port, () => {
+    console.log("Server started.");
 });
