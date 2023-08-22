@@ -1,18 +1,26 @@
 <div class="form-group">    
+
+
     <label for="sun">Sun Exposure (Minutes)</label>
-    <input type="number" id="sun" value="<%= activity.sun %>" name="sun" class="form-control" />
+    <input type="number" id="sun" name="sun" class="form-control" />
     <br /><br />
     <label for="social">Social Time (Minutes)</label>
-    <input type="number" id="social" value="<%= activity.social %>" name="social" class="form-control" />
+    <input type="number" id="social" name="social" class="form-control" />
+    <br /><br />
+    <label for="socialMedia">Social Media Time (Minutes)</label>
+    <input type="number" id="socialMedia" name="socialMedia" class="form-control" />
+    <br /><br />
+    <label for="walking">Walking (Minutes)</label>
+    <input type="number" id="walking" name="walking" class="form-control" />
     <br /><br />
     <label for="sleep">Sleep Time (Hours)</label>
-    <input type="number" id="sleep" value="<%= activity.sleep %>" name="sleep" class="form-control" />
+    <input type="number" id="sleep" name="sleep" class="form-control" />
     <br /><br />
     <label for="activity">Other Activity Done</label>
-    <input type="text" id="activity" value="<%= activity.activity %>" name="activity" class="form-control" />
+    <input type="text" id="activity" name="activity" class="form-control" />
     <br /><br />
     <label for="activityminutes">Minutes Done</label>
-    <input type="text" id="activityminutes" value="<%= activity.activityminutes %>" name="activityminutes" class="form-control" />
+    <input type="text" id="activityminutes" name="activityminutes" class="form-control" />
     <br /><br />
     <label>How Does This Activity Make You Feel When You Begin?</label>
     <br />
@@ -23,7 +31,9 @@
         for="Scared">Scared</label><br />
     <input type="checkbox" id="excited_begin" name="excited_begin" value="Excited" /><label
         for="Excited">Excited</label><br />
-    <input type="checkbox" id="apathy_begin" name="apathy_begin" value="Apathy" /><label for="Apathy">Apathy</label>
+    <input type="checkbox" id="apathy_begin" name="apathy_begin" value="Apathy" /><label for="Apathy">Apathy</label><br />
+    <input type="checkbox" id="determined_begin" name="determined_begin" value="Determined" /><label for="determined_begin">Determined</label><br />
+    <input type="checkbox" id="satisfied_begin" name="satisfied_begin" value="Satisfied" /><label for="satisfied_begin">Satisfied</label>
     <br /><br />
     <label>How Does This Activity Make You Feel When You Are Done?</label>
     <br />
@@ -33,15 +43,18 @@
     <input type="checkbox" id="scared_done" name="scared_done" value="Scared" /><label for="Scared">Scared</label><br />
     <input type="checkbox" id="excited_done" name="excited_done" value="Excited" /><label
         for="Excited">Excited</label><br />
-    <input type="checkbox" id="apathy_done" name="apathy_done" value="Apathy" /><label for="Apathy">Apathy</label>
+    <input type="checkbox" id="apathy_done" name="apathy_done" value="Apathy" /><label for="Apathy">Apathy</label><br />
+    <input type="checkbox" id="determined_done" name="determined_done" value="Determined" /><label for="determined_done">Determined</label><br />
+    <input type="checkbox" id="satisfied_done" name="satisfied_done" value="Satisfied" /><label for="satisfied_done">Satisfied</label>
+    
     <br /><br />
     <label>When Did You Do This?</label>
     <br />
-    <input type="datetime-local" id="date" name="date" value="<%= activity.date %>" class="form-control" />
+    <input type="datetime-local" id="date" name="date" class="form-control" />
     <br /><br />
     <label>Notes:</label>
     <br />
-    <textarea type="text" id="note" value="<%= activity.note %>" name="note" class="form-control"></textarea>
+    <textarea type="text" id="note" name="note" class="form-control"></textarea>
     <br /><br />
 </div>
 <a href="/" class="btn btn-secondary">Cancel</a>

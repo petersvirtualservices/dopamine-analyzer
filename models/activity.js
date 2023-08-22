@@ -2,11 +2,15 @@ const mongoose = require("mongoose");
 
 const ActivitySchema = new mongoose.Schema(
     {
+        date: {
+            type: String,
+            default: Date.now()
+        },
         activity: {
             type: String,
         },
         activityminutes: {
-            type:Number,
+            type: Number,
         },
         sun: {
             type: Number,
@@ -17,48 +21,59 @@ const ActivitySchema = new mongoose.Schema(
         social: {
             type: Number,
         },
-        minutes: {
+        socialMedia: {
+            type: Number,
+        },
+        walking: {
             type: Number,
         },
         happy_begin: {
             type: String,
         },
-        sad_begin: {
-            type: String,
-        },
-        mad_begin: {
-            type: String,
-        },
-        scared_begin: {
-            type: String,
-        },
-        excited_begin: {
-            type: String,
-        },
-        apathy_begin: {
-            type: String,
-        },
         happy_done: {
+            type: String,
+        },
+        sad_begin: {
             type: String,
         },
         sad_done: {
             type: String,
         },
+        mad_begin: {
+            type: String,
+        },
         mad_done: {
+            type: String,
+        },
+        scared_begin: {
             type: String,
         },
         scared_done: {
             type: String,
         },
+        excited_begin: {
+            type: String,
+        },
         excited_done: {
+            type: String,
+        },
+        apathy_begin: {
             type: String,
         },
         apathy_done: {
             type: String,
         },
-        date: {
+        determined_done: {
             type: String,
-            default: Date.now()
+        },
+        determined_begin: {
+            type: String,
+        },
+        satisfied_done: {
+            type: String,
+        },
+        satisfied_begin: {
+            type: String,
         },
         note: {
             type: String,
@@ -67,4 +82,4 @@ const ActivitySchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("Activiy", ActivitySchema);
+module.exports = mongoose.model("activitie", ActivitySchema);

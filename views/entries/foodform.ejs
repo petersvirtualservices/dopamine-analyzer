@@ -1,38 +1,45 @@
 <div class="form-group">
     <label for="food">List Food Eaten</label>
-<input type="text" id="food" value="<%= food.food %>" name="food" class="form-control"/>
+<input type="text" id="food" name="food" class="form-control"/>
 <br/><br/>
 <label for="ounces">How Many Ounces?</label>
-<input type="text" id="ounces" name="ounces" value="<%= food.ounces %>" class="form-control"/>
+<input type="text" id="ounces" name="ounces" class="form-control"/>
 <br/><br/>
-<label>How Does This Food Make You Feel When You Begin?</label>
-<br/>
-<input type="checkbox" id="happy_begin" name="happy_begin" value="Happy" /><label for="Happy">Happy</label><br/>
-<input type="checkbox" id="sad_begin" name="sad_begin" value="Sad" /><label for="Sad">Sad</label><br/>
-<input type="checkbox" id="mad_begin" name="mad_begin" value="Mad" /><label for="Mad">Mad</label><br/>
-<input type="checkbox" id="scared_begin" name="scared_begin" value="Scared" /><label for="Scared">Scared</label><br/>
-<input type="checkbox" id="excited_begin" name="excited_begin" value="Excited" /><label for="Excited">Excited</label><br/>
-<input type="checkbox" id="apathy_begin" name="apathy_begin" value="Apathy" /><label for="Apathy">Apathy</label>
-<br/><br/>
-<label>How Does This Food Make You Feel When You Are Done?</label>
-<br/>
-<input type="checkbox" id="happy_done" name="happy_done" value="Happy" /><label for="Happy">Happy</label><br/>
-<input type="checkbox" id="sad_done" name="sad_done" value="Sad" /><label for="Sad">Sad</label><br/>
-<input type="checkbox" id="mad_done" name="mad_done" value="Mad" /><label for="Mad">Mad</label><br/>
-<input type="checkbox" id="scared_done" name="scared_done" value="Scared" /><label for="Scared">Scared</label><br/>
-<input type="checkbox" id="excited_done" name="excited_done" value="Excited" /><label for="Excited">Excited</label><br/>
-<input type="checkbox" id="apathy_done" name="apathy_done" value="Apathy" /><label for="Apathy">Apathy</label>
-<br/><br/>
+<label>How Does This Activity Make You Feel When You Begin?</label>
+    <br />
+    <input type="checkbox" id="happy_begin" name="happy_begin" value="Happy" /><label for="Happy">Happy</label><br />
+    <input type="checkbox" id="sad_begin" name="sad_begin" value="Sad" /><label for="Sad">Sad</label><br />
+    <input type="checkbox" id="mad_begin" name="mad_begin" value="Mad" /><label for="Mad">Mad</label><br />
+    <input type="checkbox" id="scared_begin" name="scared_begin" value="Scared" /><label
+        for="Scared">Scared</label><br />
+    <input type="checkbox" id="excited_begin" name="excited_begin" value="Excited" /><label
+        for="Excited">Excited</label><br />
+    <input type="checkbox" id="apathy_begin" name="apathy_begin" value="Apathy" /><label for="Apathy">Apathy</label><br />
+    <input type="checkbox" id="determined_begin" name="determined_begin" value="Determined" /><label for="determined_begin">Determined</label><br />
+    <input type="checkbox" id="satisfied_begin" name="satisfied_begin" value="Satisfied" /><label for="satisfied_begin">Satisfied</label>
+    <br /><br />
+    <label>How Does This Activity Make You Feel When You Are Done?</label>
+    <br />
+    <input type="checkbox" id="happy_done" name="happy_done" value="Happy" /><label for="Happy">Happy</label><br />
+    <input type="checkbox" id="sad_done" name="sad_done" value="Sad" /><label for="Sad">Sad</label><br />
+    <input type="checkbox" id="mad_done" name="mad_done" value="Mad" /><label for="Mad">Mad</label><br />
+    <input type="checkbox" id="scared_done" name="scared_done" value="Scared" /><label for="Scared">Scared</label><br />
+    <input type="checkbox" id="excited_done" name="excited_done" value="Excited" /><label
+        for="Excited">Excited</label><br />
+    <input type="checkbox" id="apathy_done" name="apathy_done" value="Apathy" /><label for="Apathy">Apathy</label><br />
+    <input type="checkbox" id="determined_done" name="determined_done" value="Determined" /><label for="determined_done">Determined</label><br />
+    <input type="checkbox" id="satisfied_done" name="satisfied_done" value="Satisfied" /><label for="satisfied_done">Satisfied</label>
+    <br/><br/>
 <label for="water">Water Consumed (Ounces):</label>
-<input type="text" id="water" value="<%= food.water %>" name="water" class="form-control"/>
+<input type="text" id="water" name="water" class="form-control"/>
 <br/><br/>
 <label>When Did You Do This?</label>
 <br/>
-<input type="datetime-local" id="date" name="date" value="<%= food.date %>" class="form-control"/>
+<input type="datetime-local" id="date" name="date" class="form-control"/>
 <br/><br/>
 <label>Notes:</label>
 <br/>
-<textarea type="text" id="note" value="<%= food.note %>" name="note" class="form-control"></textarea>
+<textarea type="text" id="note" name="note" class="form-control"></textarea>
 <br/><br/>
 </div>
 <a href="/" class="btn btn-secondary">Cancel</a>

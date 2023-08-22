@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,9 @@
        <h2>Other Activity: <%= activity.activity %></h2>
        <h3>Date: <%= activity.date %></h3>
        <h3>Sun Exposure (Minutes): <%= activity.sun %></h3>
+       <h3>Social Media Exposure (Minutes): <%= activity.socialMedia %></h3>
        <h3>Social Exposure (Minutes): <%= activity.social %></h3>
+       <h3>Walking (Minutes): <%= activity.walking %></h3>
        <h3>Sleep Exposure (Minutes): <%= activity.sleep %></h3>
        <br/>
        <h3>What emotions does eating this activity make you feel when it started?</h3>
@@ -24,6 +27,8 @@
         <%= activity.excited_begin %><br/>
         <%= activity.scared_begin %><br/>
         <%= activity.apathy_begin %><br/>
+        <%= activity.determined_begin %><br/>
+        <%= activity.satisfied_begin %><br/>
     </p>
 
     <h3>What emotions does eating this activity make you feel when you are done?</h3>
@@ -34,10 +39,13 @@
         <%= activity.excited_done %><br/>
         <%= activity.scared_done %><br/>
         <%= activity.apathy_done %><br/>
+        <%= activity.determined_done %><br/>
+        <%= activity.satisfied_done %><br/>
     </p>
 <p><b>Notes: </b><%= activity.note %><br/></p>
     <a href="/" class="btn btn-secondary">Homepage</a>
-    <!--<a href="/entries/edit/<%=activity.id %>" class="btn btn-info">Edit</a>-->
+    <!--<a href="/entries/edit/<%=activity.id %>" class="btn btn-info">Edit</a>
 </div>
 </body>
 </html>
+-->

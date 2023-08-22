@@ -12,26 +12,31 @@ router.get('/new', (req, res) => {
 router.get('/:id', async (req, res, next) => {
   const food = await Food.findById(req.params.id);
   if (food == null) res.redirect('/');
-  res.render('entries/foodshow', { food: food })
+  res.render('entries/index');
+  //, { food: food })
 })
 
 router.post('/', async (req, res) => {
   let food = new Food({
     food: req.body.food,
-    water:req.body.water,
+    water: req.body.water,
     ounces: req.body.ounces,
     happy_begin: req.body.happy_begin,
-    sad_begin: req.body.sad_begin,
-    mad_begin: req.body.mad_begin,
-    scared_begin: req.body.scared_begin,
-    excited_begin: req.body.excited_begin,
-    apathy_begin: req.body.apathy_begin,
     happy_done: req.body.happy_done,
+    sad_begin: req.body.sad_begin,
     sad_done: req.body.sad_done,
+    mad_begin: req.body.mad_begin,
     mad_done: req.body.mad_done,
+    scared_begin: req.body.scared_begin,
     scared_done: req.body.scared_done,
+    excited_begin: req.body.excited_begin,
     excited_done: req.body.excited_done,
+    apathy_begin: req.body.apathy_begin,
     apathy_done: req.body.apathy_done,
+    determined_done: req.body.determined_done,
+    determined_begin: req.body.determined_begin,
+    satisfied_done: req.body.satisfied_done,
+    satisfied_begin: req.body.satisfied_begin,
     date: req.body.date,
     note: req.body.note,
   })
