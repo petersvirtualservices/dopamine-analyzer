@@ -55,44 +55,10 @@ router.post('/', async (req, res, next) => {
   req.activity = new Activity();
   next();
 }),
-//}, saveactivityAndRedirect('new'));
-/*
-router.delete('/:id', async (req, res) => {
-  await Food.findByIdAndDelete(req.params.id);
-  res.redirect('/');
-})
-*/
+
 router.put('/:id', async (req, res, next) => {
   req.activity = await Activity.findById(req.params.id);
 })
-/*
-router.get('/edit/:id', async (req, res, next) => {
-  const activity = await Food.findById(req.params.id);
-  if (activity == null) res.redirect('/');
-  res.render('Food/edit', { activity: activity });
-})
 
-function saveactivityAndRedirect(path) {
-  return async (req, res) => {
-    let activity = req.activity
-    activity.id = req.body.title
-    activity.food = req.body.food
-    activity.water = req.body.water
-    activity.ounces = req.body.ounces
-    activity.happy = req.body.happy
-    activity.sad = req.body.sad
-    activity.mad = req.body.mad
-    activity.scared = req.body.scared
-    activity.excited = req.body.excited
-    activity.apathy = req.body.apathy
-    try {
-      activity = await activity.save();
-      res.redirect(`/entries/${activity.id}`);
-    } catch (e) {
-      res.render(`entries/${path}`, { activity: activity });
-    }    
-  }  
-}
-*/
 
 module.exports = router;

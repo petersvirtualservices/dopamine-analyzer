@@ -8,6 +8,10 @@ const activitiesRouter = require('./routes/activity');
 const Activity = require('./models/activity');
 const measurementRouter = require('./routes/measurement');
 const Measurement = require('./models/measurements');
+const add_foodRouter = require('./routes/add_food');
+const Add_Food = require('./models/add_food');
+const energyRouter = require('./routes/energy');
+const Energy = require('./models/energy');
 var methodOverride = require('method-override');
 
 
@@ -18,6 +22,8 @@ app.use(express.urlencoded({extended:false}));
 app.use('/food',foodRouter);
 app.use('/activity',activitiesRouter);
 app.use('/measurements',measurementRouter);
+app.use('/add_food',add_foodRouter);
+app.use('/energy',energyRouter);
 app.use(methodOverride('_method'));
 
 // DB Config
@@ -52,6 +58,16 @@ app.get('/activity', async (req, res) => {
 app.get('/measurements', async (req, res) => {
   const measurements = await Measurement.find().sort({ date: 'desc' })
   res.render('entries/measurementindex', { measurements: measurements })
+})
+
+app.get('/add_food', async (req, res) => {
+  const add_foods = await Add_Food.find().sort({ date: 'desc' });
+  res.render('entries/add_foodindex', { add_foods: add_foods })
+})
+
+app.get('/energy', async (req, res) => {
+  const energies = await Energy.find().sort({ date: 'desc' });
+  res.render('entries/energyindex', { energies:energies })
 })
 
 var port = process.env.PORT || 8080;

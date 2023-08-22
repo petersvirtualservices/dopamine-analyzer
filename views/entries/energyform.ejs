@@ -1,0 +1,28 @@
+<div class="form-group"> 
+
+    <label>When Did You Do This?</label>
+    <br />
+    <input type="datetime-local" id="date" name="date" class="form-control" />
+    <br /><br />
+    <label>Do you feel Positive Or Negative? Do you feel like this will help your future?</label>
+    <br />
+    <input type="checkbox" id="positive" name="positive" value="positive" /><label for="positive">Positive</label><br />
+    <input type="checkbox" id="negative" name="negative" value="negative" /><label for="negative">Negative</label><br />
+    <br /><br />
+    <label>How Strong Is This Feeling? How long do you think it will last?</label>
+    <br />
+    <select id="strength" name="strength" class="form-control">
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+    </select>
+    <br /><br />
+        <label>Notes:</label>
+    <br />
+    <textarea type="text" id="note" name="note" class="form-control"></textarea>
+    <br /><br />
+</div>
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Submit</button>
