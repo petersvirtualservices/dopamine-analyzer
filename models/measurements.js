@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const MeasurementSchema = new mongoose.Schema(
     {
         weight: {
-            type: Number,
+            type: String,
         },
         bloodsugar: {
             type: Number,
