@@ -7,13 +7,10 @@ const EnergySchema = new mongoose.Schema(
             default: Date.now()
         },
         positive: {
-            type: String,
+            type: Number,
         },
         negative: {
-            type: String,
-        },
-        strength: {
-            type:String,
+            type: Number,
         },
         note: {
             type: String,

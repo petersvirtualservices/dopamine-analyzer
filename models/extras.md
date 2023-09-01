@@ -198,3 +198,97 @@ bmi: {
     <label for="impedanceTrunkHundred">Right Leg 100Hz Impedance</label>
     <input type="text" id="impedanceTrunkHundred" value="<%= measurement.impedanceTrunkHundred %>" name="impedanceTrunkHundred" class="form-control" />
     <br />
+
+
+happy_begin: {
+            type: String,
+        },
+        happy_done: {
+            type: String,
+        },
+        sad_begin: {
+            type: String,
+        },
+        sad_done: {
+            type: String,
+        },
+        mad_begin: {
+            type: String,
+        },
+        mad_done: {
+            type: String,
+        },
+        scared_begin: {
+            type: String,
+        },
+        scared_done: {
+            type: String,
+        },
+        excited_begin: {
+            type: String,
+        },
+        excited_done: {
+            type: String,
+        },
+        apathy_begin: {
+            type: String,
+        },
+        apathy_done: {
+            type: String,
+        },
+        determined_done: {
+            type: String,
+        },
+        determined_begin: {
+            type: String,
+        },
+        satisfied_done: {
+            type: String,
+        },
+        satisfied_begin: {
+            type: String,
+        },
+
+
+          happy_begin: req.body.happy_begin,
+  happy_done: req.body.happy_done,
+  sad_begin: req.body.sad_begin,
+  sad_done: req.body.sad_done,
+  mad_begin: req.body.mad_begin,
+  mad_done: req.body.mad_done,
+  scared_begin: req.body.scared_begin,
+  scared_done: req.body.scared_done,
+  excited_begin: req.body.excited_begin,
+  excited_done: req.body.excited_done,
+  apathy_begin: req.body.apathy_begin,
+  apathy_done: req.body.apathy_done,
+  determined_done: req.body.determined_done,
+  determined_begin: req.body.determined_begin,
+  satisfied_done: req.body.satisfied_done,
+  satisfied_begin: req.body.satisfied_begin,
+
+  <label>How Does This Activity Make You Feel When You Begin?</label>
+    <br />
+    <input type="checkbox" id="happy_begin" name="happy_begin" value="Happy" /><label for="Happy">Happy</label><br />
+    <input type="checkbox" id="sad_begin" name="sad_begin" value="Sad" /><label for="Sad">Sad</label><br />
+    <input type="checkbox" id="mad_begin" name="mad_begin" value="Mad" /><label for="Mad">Mad</label><br />
+    <input type="checkbox" id="scared_begin" name="scared_begin" value="Scared" /><label
+        for="Scared">Scared</label><br />
+    <input type="checkbox" id="excited_begin" name="excited_begin" value="Excited" /><label
+        for="Excited">Excited</label><br />
+    <input type="checkbox" id="apathy_begin" name="apathy_begin" value="Apathy" /><label for="Apathy">Apathy</label><br />
+    <input type="checkbox" id="determined_begin" name="determined_begin" value="Determined" /><label for="determined_begin">Determined</label><br />
+    <input type="checkbox" id="satisfied_begin" name="satisfied_begin" value="Satisfied" /><label for="satisfied_begin">Satisfied</label>
+    <br /><br />
+    <label>How Does This Activity Make You Feel When You Are Done?</label>
+    <br />
+    <input type="checkbox" id="happy_done" name="happy_done" value="Happy" /><label for="Happy">Happy</label><br />
+    <input type="checkbox" id="sad_done" name="sad_done" value="Sad" /><label for="Sad">Sad</label><br />
+    <input type="checkbox" id="mad_done" name="mad_done" value="Mad" /><label for="Mad">Mad</label><br />
+    <input type="checkbox" id="scared_done" name="scared_done" value="Scared" /><label for="Scared">Scared</label><br />
+    <input type="checkbox" id="excited_done" name="excited_done" value="Excited" /><label
+        for="Excited">Excited</label><br />
+    <input type="checkbox" id="apathy_done" name="apathy_done" value="Apathy" /><label for="Apathy">Apathy</label><br />
+    <input type="checkbox" id="determined_done" name="determined_done" value="Determined" /><label for="determined_done">Determined</label><br />
+    <input type="checkbox" id="satisfied_done" name="satisfied_done" value="Satisfied" /><label for="satisfied_done">Satisfied</label>
+    <br/><br/>

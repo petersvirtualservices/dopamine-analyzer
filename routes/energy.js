@@ -20,7 +20,6 @@ router.post('/', async (req, res) => {
   date: req.body.date,
   positive: req.body.positive,
   negative: req.body.negative,
-  strength: req.body.strength,
   note: req.body.note    
   })
   try {
