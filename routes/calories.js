@@ -2,48 +2,54 @@
 
 const express = require('express');
 const router = express.Router();
-const Activity = require('../models/activity');
+const Calories = require('../models/calories');
 
 router.get('/new', (req, res) => {
-  res.render('entries/newactivity', { activity: new Activity() });
+  res.render('entries/index', { calorie: new Calories() });
 });
 
 router.get('/:id', async (req, res, next) => {
-  const activity = await Activity.findById(req.params.id);
-  if (activity == null) res.redirect('/');
+  const calorie = await Calories.findById(req.params.id);
+  if (calorie == null) res.redirect('/');
   res.render('entries/index');
-  //, { activity: activity })
+  //, { calorie: calorie })
 })
 
 router.post('/', async (req, res) => {
-  let activity = new Activity({
+  let calorie = new Calories({
   date: req.body.date,
+  food: req.body.food,
+    water: req.body.water,
+    servings: req.body.servings,
   activity: req.body.activity,
   activityminutes: req.body.activityminutes,
   sun: req.body.sun,
+  fatTan: req.body.fatTan,
   sleep: req.body.sleep,
   social: req.body.social,
+  selfTalk: req.body.selfTalk,
   socialMedia: req.body.socialMedia,
   walking: req.body.walking,
   work: req.body.work,
-
+  bodilyGas: req.body.bodilyGas,
+  deficate: req.body.deficate,
   note: req.body.note    
   })
   try {
-    activity = await activity.save();
-    res.redirect(`/activity/${activity.id}`);
+    calorie = await calorie.save();
+    res.render('entries/index');
   } catch (e) {
-    res.render('activity/newactivity', { activity: activity });
+    res.render('calories/newcalories', { calorie: calorie });
   }
 });
 
 router.post('/', async (req, res, next) => {
-  req.activity = new Activity();
+  req.calorie = new Calories();
   next();
 }),
 
 router.put('/:id', async (req, res, next) => {
-  req.activity = await Activity.findById(req.params.id);
+  req.calorie = await Calories.findById(req.params.id);
 })
 
 

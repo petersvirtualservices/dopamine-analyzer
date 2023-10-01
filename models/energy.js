@@ -12,6 +12,12 @@ const EnergySchema = new mongoose.Schema(
         negative: {
             type: Number,
         },
+        laugh: {
+            type: String,
+        },
+        physicalEmotion: {
+            type: String,
+        },
         note: {
             type: String,
         },

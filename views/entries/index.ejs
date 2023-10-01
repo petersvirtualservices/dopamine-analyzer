@@ -12,34 +12,25 @@
       width: 500px;
       margin: 0 auto;
     }
-    a {
-      height: 50px;
-      width: 200px;
-      text-align: center;
-      display: block;
-      margin: 0 auto;
-    }
   </style>
 </head>
 
-<body>
+<body class="container">
+  <h2>New Activty</h2>
+
+  <a href="/measurement/new" class="btn btn-success">Measurements</a>
+  <a href="/energy/new" class="btn btn-success">Energy</a>
+
+<!--
+  <a href="/food" class="btn btn-success">Listed Foods</a>
+  <a href="/activity" class="btn btn-success">Listed Activities</a>
+  -->
+  <br><br>
   <div class="container">
-    <h1>Dopamine App</h1>
-    <br><br>
-    <a href="/food/new" class="btn btn-success">New Food</a><br><br>
-    <a href="/activity/new" class="btn btn-success">New Activity</a><br><br>
-    <a href="/measurements/new" class="btn btn-success">New Measurement</a><br><br>
-    <a href="/energy/new" class="btn btn-success">Track Energy</a><br><br>
-    <a href="/add_food/new" class="btn btn-success">Add Food Information</a><br><br>
-    <!--
-<a href="/food" class="btn btn-success">Listed Foods</a><br><br>
-    <a href="/activity" class="btn btn-success">Listed Activities</a><br><br>
-    -->
-    <!--<a href="/measurements" class="btn btn-success">Listed Measurements</a>-->
-
-
-
-  </div>
+      <form action="/calories" method="POST">
+  <%-include('caloriesform') %>
+  </form>
+</div>
 </body>
 
 </html>

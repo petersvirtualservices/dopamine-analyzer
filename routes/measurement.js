@@ -33,7 +33,7 @@ router.post('/', async (req, res) => {
     measurement = await measurement.save();
     res.redirect(`/measurements/${measurement.id}`);
   } catch (e) {
-    res.render('measurements/newmeasurement', { measurement: measurement });
+    res.render('entries/index');
   }
 });
 
