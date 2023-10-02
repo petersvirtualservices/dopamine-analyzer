@@ -18,10 +18,10 @@ router.get('/:id', async (req, res, next) => {
 router.post('/', async (req, res) => {
   let energy = new Energy({
   date: req.body.date,
-  positive: req.body.positive,
-  negative: req.body.negative,
+  feeling: req.body.feeling,
   laugh: req.body.laugh,
   physicalEmotion: req.body.physicalEmotion,
+  craving: req.body.craving,
   note: req.body.note    
   })
   try {

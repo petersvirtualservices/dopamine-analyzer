@@ -6,16 +6,16 @@ const EnergySchema = new mongoose.Schema(
             type: String,
             default: Date.now()
         },
-        positive: {
-            type: Number,
-        },
-        negative: {
+        feeling: {
             type: Number,
         },
         laugh: {
             type: String,
         },
         physicalEmotion: {
+            type: String,
+        },
+        craving: {
             type: String,
         },
         note: {
