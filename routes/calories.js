@@ -17,23 +17,22 @@ router.get('/:id', async (req, res, next) => {
 
 router.post('/', async (req, res) => {
   let calorie = new Calories({
-  date: req.body.date,
-  food: req.body.food,
+    date: req.body.date,
+    food: req.body.food,
     water: req.body.water,
     servings: req.body.servings,
-  activity: req.body.activity,
-  activityminutes: req.body.activityminutes,
-  sun: req.body.sun,
-  fatTan: req.body.fatTan,
-  sleep: req.body.sleep,
-  social: req.body.social,
-  selfTalk: req.body.selfTalk,
-  socialMedia: req.body.socialMedia,
-  walking: req.body.walking,
-  work: req.body.work,
-  bodilyGas: req.body.bodilyGas,
-  deficate: req.body.deficate,
-  note: req.body.note    
+    foodLength: req.body.foodLength,
+    activity: req.body.activity,
+    activityminutes: req.body.activityminutes,
+    sun: req.body.sun,
+    social: req.body.social,
+    cardio: req.body.cardio,
+    rest: req.body.rest,
+    bodyRelease: req.body.bodyRelease,
+    craving: req.body.craving,
+    feelingBefore: req.body.feelingBefore,
+    feelingAfter: req.body.feelingAfter,
+    note: req.body.note
   })
   try {
     calorie = await calorie.save();
@@ -48,9 +47,9 @@ router.post('/', async (req, res, next) => {
   next();
 }),
 
-router.put('/:id', async (req, res, next) => {
-  req.calorie = await Calories.findById(req.params.id);
-})
+  router.put('/:id', async (req, res, next) => {
+    req.calorie = await Calories.findById(req.params.id);
+  })
 
 
 module.exports = router;

@@ -28,7 +28,7 @@ const MeasurementSchema = new mongoose.Schema(
         },
         chest: {
             type: Number,
-        },        
+        },
         date: {
             type: String,
         },

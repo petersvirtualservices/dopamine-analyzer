@@ -9,6 +9,9 @@ const CalorieSchema = new mongoose.Schema(
         food: {
             type: String,
         },
+        foodLength: {
+            type: String,
+        },
         water: {
             type: String,
         },
@@ -18,16 +21,10 @@ const CalorieSchema = new mongoose.Schema(
         activityminutes: {
             type: String,
         },
-        bodilyGas: {
-            type: String,
-        },
-        deficate: {
+        bodyRelease: {
             type: String,
         },
         sun: {
-            type: String,
-        },
-        fatTan: {
             type: String,
         },
         sleep: {
@@ -36,16 +33,19 @@ const CalorieSchema = new mongoose.Schema(
         social: {
             type: String,
         },
-        socialMedia: {
+        cardio: {
             type: String,
         },
-        selfTalk: {
-            type:String,
-        },
-        walking: {
+        rest: {
             type: String,
         },
-        work: {
+        feelingBefore: {
+            type: Number,
+        },
+        feelingAfter: {
+            type: Number,
+        },
+        craving: {
             type: String,
         },
         note: {

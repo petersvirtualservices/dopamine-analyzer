@@ -6,8 +6,6 @@ const caloriesRouter = require('./routes/calories');
 const Calorie = require('./models/calories');
 const measurementRouter = require('./routes/measurement');
 const Measurement = require('./models/measurements');
-const energyRouter = require('./routes/energy');
-const Energy = require('./models/energy');
 const add_foodRouter = require('./routes/add_food');
 const Add_Food = require('./models/add_food');
 var methodOverride = require('method-override');
@@ -20,7 +18,6 @@ app.use(express.urlencoded({extended:false}));
 app.use('/calories',caloriesRouter);
 app.use('/measurement',measurementRouter);
 app.use('/add_food',add_foodRouter);
-app.use('/energy',energyRouter);
 app.use(methodOverride('_method'));
 
 // DB Config
@@ -57,10 +54,6 @@ app.get('/', async (req, res) => {
 //   res.render('entries/add_foodindex', { add_foods: add_foods })
 // })
 
-// app.get('/energy', async (req, res) => {
-//   const energies = await Energy.find().sort({ date: 'desc' });
-//   res.render('entries/energyindex', { energies:energies })
-// })
 
 var port = process.env.PORT || 8080;
 app.listen(port, () => {

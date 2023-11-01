@@ -49,7 +49,7 @@ const AddFoodSchema = new mongoose.Schema(
         },
         potassium: {
             type: String,
-        },        
+        },
         note: {
             type: String,
         },

@@ -18,23 +18,23 @@ router.get('/:id', async (req, res, next) => {
 router.post('/', async (req, res) => {
   let add_food = new Add_Food({
 
-  food: req.body.food,
-  serving:req.body.serving,
-calories: req.body.calories,
-totalFat: req.body.totalFat,
-satFat: req.body.satFat,
-transFat: req.body.transFat,
-cholesterol: req.body.cholesterol,
-sodium: req.body.sodium,
-carbohydrates: req.body.carbohydrates,
-fiber: req.body.fiber,
-sugars: req.body.sugars,
-protein: req.body.protein,
-vitD: req.body.vitD,
-calcium: req.body.calcium,
-iron: req.body.iron,
-potassium: req.body.potassium,
-note: req.body.note    
+    food: req.body.food,
+    serving: req.body.serving,
+    calories: req.body.calories,
+    totalFat: req.body.totalFat,
+    satFat: req.body.satFat,
+    transFat: req.body.transFat,
+    cholesterol: req.body.cholesterol,
+    sodium: req.body.sodium,
+    carbohydrates: req.body.carbohydrates,
+    fiber: req.body.fiber,
+    sugars: req.body.sugars,
+    protein: req.body.protein,
+    vitD: req.body.vitD,
+    calcium: req.body.calcium,
+    iron: req.body.iron,
+    potassium: req.body.potassium,
+    note: req.body.note
   })
   try {
     add_food = await add_food.save();
@@ -48,16 +48,16 @@ router.post('/', async (req, res, next) => {
   req.add_food = new Add_Food();
   next();
 }),
-//saveadd_foodAndRedirect('new'));
-/*
-router.delete('/:id', async (req, res) => {
-  await Food.findByIdAndDelete(req.params.id);
-  res.redirect('/');
-})
-*/
-router.put('/:id', async (req, res, next) => {
-  req.add_food = await Add_Food.findById(req.params.id);
-})
+  //saveadd_foodAndRedirect('new'));
+  /*
+  router.delete('/:id', async (req, res) => {
+    await Food.findByIdAndDelete(req.params.id);
+    res.redirect('/');
+  })
+  */
+  router.put('/:id', async (req, res, next) => {
+    req.add_food = await Add_Food.findById(req.params.id);
+  })
 /*
 router.get('/edit/:id', async (req, res, next) => {
   const add_food = await Food.findById(req.params.id);

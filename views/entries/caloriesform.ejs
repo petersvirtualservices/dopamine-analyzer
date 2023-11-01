@@ -5,70 +5,131 @@
     <br /><br />
 
     <h2>Calorie Increase</h2>
+    <br>
+    <div style="display: block; border: 15px; border-color: black; background-color: lightgreen; font-weight: bold; padding: 5px;">
+    Month Goal: <br>
+    Only Eat Salty Together And Sweet Together.
+    </div>
+    <br><br>
     <label for="food">Food Eaten</label>
     <input type="text" id="food" name="food" class="form-control" />
     <br /><br />
     <label for="servings">Servings</label>
     <input type="text" id="servings" name="servings" class="form-control" />
+    <br /><br />    
+    <label for="foodLength">Time Eating (Minutes)</label>
+    <input type="text" id="foodLength" name="foodLength" class="form-control" />
     <br /><br />
     <label for="water">Water (Ounces) </label>
     <input type="text" id="water" name="water" class="form-control" />
     <br /><br />
     <h2>Calorie Decrease</h2>
-    <label for="sun">Sun Exposure (Minutes)</label>
-    <input type="text" id="sun" name="sun" class="form-control" />
-    <br /><br />
-    <label for="fatTan">Was This A Fat Tan?</label>
-    <br />
-    <select id="fatTan" name="fatTan" class="form-control">
+    <label for="sun">Sun Exposure</label>
+    <select id="sun" name="sun" class="form-control">
         <option value="None">None</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
+        <option value="fatTan5">Fat Tan - 5 Minutes (Or Less)</option>
+        <option value="fatTan10">Fat Tan - 10 Minutes</option>
+        <option value="fatTan15">Fat Tan - 15 Minutes</option>
+        <option value="fatTan20">Fat Tan - 20 Minutes</option>
+        <option value="fatTanMoreThan20">Fat Tan - 20+ Minutes (Notate)</option>
+        <option value="noFatTan5">No Fat Tan - 5 Minutes (Or Less)</option>
+        <option value="noFatTan10">No Fat Tan - 10 Minutes</option>
+        <option value="noFatTan15">No Fat Tan - 15 Minutes</option>
+        <option value="noFatTan20">No Fat Tan - 20 Minutes</option>
+        <option value="noFatTanMoreThan20">No Fat Tan - 20+ Minutes (Notate)</option>
     </select>
-    <br /><br />
-    <label for="social">Social Time (Minutes)</label>
-    <input type="text" id="social" name="social" class="form-control" />
-    <br /><br />
-    <label for="selfTalk">Self Talk - Reflect My Neurological State (Minutes)</label>
-    <input type="text" id="selfTalk" name="selfTalk" class="form-control" />
-    <br /><br />
-    <label for="socialMedia">Social Media Time (Minutes)</label>
-    <input type="text" id="socialMedia" name="socialMedia" class="form-control" />
-    <br /><br />
-    <label for="bodilyGas">Bodily Air (Burp, Fart, Cough, Sneeze, Medication, etc.) (Intensity)</label>
-    <br />
-    <select id="bodilyGas" name="bodilyGas" class="form-control">
+    <br /><br /> 
+    <label for="sun">Social Experience</label>
+    <select id="social" name="social" class="form-control">
         <option value="None">None</option>
-        <option value="5">5</option>
-        <option value="4">4</option>
-        <option value="3">3</option>
-        <option value="2">2</option>
-        <option value="1">1</option>
+        <option value="humanTime5">Human Connection - 5 Minutes (Or Less)</option>
+        <option value="humanTime10">Human Connection - 10 Minutes </option>
+        <option value="humanTime15">Human Connection - 15 Minutes </option>
+        <option value="humanTime20">Human Connection - 20 Minutes </option>
+        <option value="humanTimeMoreThan20">Human Connection - 20+ Minutes (Notate) </option>
+        <option value="selfTime5">Self Talk - 5 Minutes (Or Less)</option>
+        <option value="selfTime10">Self Talk - 10 Minutes </option>
+        <option value="selfTime15">Self Talk - 15 Minutes </option>
+        <option value="selfTime20">Self Talk - 20 Minutes </option>
+        <option value="selfTimeMoreThan20">Self Talk - 20+ Minutes (Notate) </option>
+        <option value="socialMediaTime5">Social Media - 5 Minutes (Or Less)</option>
+        <option value="socialMediaTime10">Social Media - 10 Minutes </option>
+        <option value="socialMediaTime15">Social Media - 15 Minutes </option>
+        <option value="socialMediaTime20">Social Media - 20 Minutes </option>
+        <option value="socialMediaTimeMoreThan20">Social Media - 20+ Minutes (Notate) </option>
     </select>
-    <br /><br />    
-    <label for="deficate">Defication (Intensity)</label>
+    <br /><br /> 
+    <label for="bodilyGas">Body Release (Notate If Necessary)</label>
     <br />
-    <select id="deficate" name="deficate" class="form-control">
+    <select id="bodyRelease" name="bodyRelease" class="form-control">
         <option value="None">None</option>
+        <option value="Burp">Burp</option>
+        <option value="Fart">Fart</option>
         <option value="PeeLight">Pee - Light</option>
         <option value="PeeHeavy">Pee - Heavy</option>
         <option value="PoopLight">Poop - Light</option>
         <option value="PoopHeavy">Poop - Heavy</option>
-        <option value="PeePoopLight">Pee And Poop - Light</option>
-        <option value="PeePoopHeavy">Pee And Poop - Heavy</option>
+        <option value="Cough">Cough</option>
+        <option value="Cry">Crying</option>
+        <option value="Sneeze">Sneeze</option>        
+        <option value="Yawn">Yawn</option>
+        <option value="Vomit">Vomit</option>
+        <option value="Sweat">Sweat</option>
+    </select>
+    <br /><br />     
+    <label for="rest">Sitting Activities That Distract From Food</label>
+    <select id="rest" name="rest" class="form-control">
+        <option value="None">None</option>
+        <option value="work">Work</option>
+        <option value="study">Study</option>
+        <option value="tv">TV</option>
+        <option value="sleep">Sleep</option>
+        <option value="other">Other - Notate</option>
+    </select>
+    <br /><br />
+    <label for="cardio">Muscle Stimulation (Minutes In Activty Minutes)</label>
+    <select id="cardio" name="cardio" class="form-control">
+        <option value="None">None</option>
+        <option value="walk">Walking</option>
+        <option value="laugh">Laughing</option>
+        <option value="deepBreath">Deep Breath</option>
+        <option value="housework">Housework/Yardwork</option>
+        <option value="muscleMuscle">Muscle Workout</option>
+        <option value="muscleCardio">Cardio Workout</option>
+        <option value="driving">Driving</option>
+        <option value="other">Other - Notate</option>
     </select>
     <br /><br /> 
-    <label for="walking">Walking/Cardio (Housework, Workout, etc.) (Minutes)</label>
-    <input type="text" id="walking" name="walking" class="form-control" />
-    <br /><br />
-    <label for="work">Sitting Activities That Distract From Eating (Work, Study, TV, etc.) (Minutes)</label>
-    <input type="text" id="work" name="work" class="form-control" />
-    <br /><br />
-    <label for="sleep">Sleep Time (Minutes)</label>
-    <input type="text" id="sleep" name="sleep" class="form-control" />
-    <br /><br />
-    <label for="activityminutes">Other Activity Minutes (Describe In Notes)</label>
+    <label for="activityminutes">Activity Minutes (Notate If Necessary)</label>
     <input type="text" id="activityminutes" name="activityminutes" class="form-control" />
+    <br /><br />
+    <label>How Much Are You Craving Food?</label>
+    <br />
+    <select id="craving" name="craving" class="form-control">
+        <option value="5">5 - Will Drive To Get It / Need Food Now</option>
+        <option value="4">4 - Will Eat In Next 10 Minutes</option>
+        <option value="3">3 - Would Eat If Opportunity Arose</option>
+        <option value="2">2 - Feeling Hungry, Can Wait</option>
+        <option value="1">1 - Could Wait to Eat After 2 Hours</option>
+    </select>
+    <br /><br />
+    <label>Feeling Before</label>
+    <select id="feelingBefore" name="feelingBefore" class="form-control">
+        <option value="PositiveSpike">Positive Spike</option>
+        <option value="PostiveMore">Positive Outweighs Negative</option>
+        <option value="Equal">Positive And Negative Balance</option>
+        <option value="NegativeMore">Negative Outweighs Positive</option>
+        <option value="NegativeSpike">Negative Spike</option>
+    </select>
+    <br /><br />
+    <label>Feeling After</label>
+    <select id="feelingAfter" name="feelingAfter" class="form-control">
+        <option value="PositiveSpike">Positive Spike</option>
+        <option value="PostiveMore">Positive Outweighs Negative</option>
+        <option value="Equal">Positive And Negative Balance</option>
+        <option value="NegativeMore">Negative Outweighs Positive</option>
+        <option value="NegativeSpike">Negative Spike</option>
+    </select>
     <br /><br />
     <label>Notes:</label>
     <br />
