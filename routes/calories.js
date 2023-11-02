@@ -5,7 +5,7 @@ const router = express.Router();
 const Calories = require('../models/calories');
 
 router.get('/new', (req, res) => {
-  res.render('entries/index', { calorie: new Calories() });
+  res.render('entries/newcalories', { calorie: new Calories() });
 });
 
 router.get('/:id', async (req, res, next) => {
@@ -22,7 +22,6 @@ router.post('/', async (req, res) => {
     water: req.body.water,
     servings: req.body.servings,
     foodLength: req.body.foodLength,
-    activity: req.body.activity,
     activityminutes: req.body.activityminutes,
     sun: req.body.sun,
     social: req.body.social,
@@ -36,9 +35,9 @@ router.post('/', async (req, res) => {
   })
   try {
     calorie = await calorie.save();
-    res.render('entries/index');
+    res.redirect(`/calories/${calorie.id}`);
   } catch (e) {
-    res.render('calories/newcalories', { calorie: calorie });
+    res.render('entries/index');
   }
 });
 
@@ -46,7 +45,6 @@ router.post('/', async (req, res, next) => {
   req.calorie = new Calories();
   next();
 }),
-
   router.put('/:id', async (req, res, next) => {
     req.calorie = await Calories.findById(req.params.id);
   })
