@@ -25,12 +25,10 @@ router.post('/', async (req, res) => {
     activityminutes: req.body.activityminutes,
     sun: req.body.sun,
     social: req.body.social,
-    cardio: req.body.cardio,
-    rest: req.body.rest,
+    activity: req.body.activity,
     bodyRelease: req.body.bodyRelease,
     craving: req.body.craving,
-    feelingBefore: req.body.feelingBefore,
-    feelingAfter: req.body.feelingAfter,
+    feeling: req.body.feeling,
     note: req.body.note
   })
   try {

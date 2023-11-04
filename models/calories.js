@@ -33,16 +33,10 @@ const CalorieSchema = new mongoose.Schema(
         social: {
             type: String,
         },
-        cardio: {
+        activity: {
             type: String,
         },
-        rest: {
-            type: String,
-        },
-        feelingBefore: {
-            type: String,
-        },
-        feelingAfter: {
+        feeling: {
             type: String,
         },
         craving: {
