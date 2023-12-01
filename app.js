@@ -39,10 +39,12 @@ app.get('/', async (req, res) => {
   res.render('entries/index')
 })
 
-// app.get('/calories', async (req, res) => {
-//   const activities = await Activity.find().sort({ date: 'desc' })
-//   //res.render('entries/index', { calories: calories })
-// })
+
+
+app.get('/caloriesShow', async (req, res) => {
+  const activities = await Calorie.find().sort({ date: 'desc' })
+  res.render('entries/caloriesindex', { measurements: measurements })
+})
 
 // app.get('/measurements', async (req, res) => {
 //   const measurements = await Measurement.find().sort({ date: 'desc' })

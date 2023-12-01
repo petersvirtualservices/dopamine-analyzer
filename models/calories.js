@@ -30,16 +30,10 @@ const CalorieSchema = new mongoose.Schema(
         sleep: {
             type: String,
         },
-        social: {
-            type: String,
-        },
         activity: {
             type: String,
         },
-        feeling: {
-            type: String,
-        },
-        craving: {
+        activityIntensity: {
             type: String,
         },
         note: {

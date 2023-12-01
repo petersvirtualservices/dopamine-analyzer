@@ -1,22 +1,17 @@
-<div class="form-group"> 
+<div class="form-group">
     <label>When Did You Do This?</label>
     <br />
     <input type="datetime-local" id="date" name="date" class="form-control" />
     <br /><br />
 
     <h2>Calorie Increase</h2>
-    <br>
-    <div style="display: block; border: 15px; border-color: black; background-color: lightgreen; font-weight: bold; padding: 5px;">
-    Month Goal: <br>
-    Only Eat Salty Together And Sweet Together.
-    </div>
     <br><br>
     <label for="food">Food Eaten</label>
     <input type="text" id="food" name="food" class="form-control" />
     <br /><br />
     <label for="servings">Servings</label>
     <input type="text" id="servings" name="servings" class="form-control" />
-    <br /><br />    
+    <br /><br />
     <label for="foodLength">Time Eating (Minutes)</label>
     <input type="text" id="foodLength" name="foodLength" class="form-control" />
     <br /><br />
@@ -24,102 +19,51 @@
     <input type="text" id="water" name="water" class="form-control" />
     <br /><br />
     <h2>Calorie Decrease</h2>
-    <label for="sun">Sun Exposure</label>
-    <select id="sun" name="sun" class="form-control">
-        <option value="None">None</option>
-        <option value="fatTan_5">Fat Tan - 5 Minutes (Or Less)</option>
-        <option value="fatTan_10">Fat Tan - 10 Minutes</option>
-        <option value="fatTan_15">Fat Tan - 15 Minutes</option>
-        <option value="fatTan_20">Fat Tan - 20 Minutes</option>
-        <option value="noFatTan_5">No Fat Tan - 5 Minutes (Or Less)</option>
-        <option value="noFatTan_10">No Fat Tan - 10 Minutes</option>
-        <option value="noFatTan_15">No Fat Tan - 15 Minutes</option>
-        <option value="noFatTan_20">No Fat Tan - 20 Minutes</option>
-    </select>
-    <br /><br /> 
-    <label for="social">Social Experience</label>
-    <select id="social" name="social" class="form-control">
-        <option value="None">None</option>
-        <option value="humanTime_5">Human Connection - 5 Minutes (Or Less)</option>
-        <option value="humanTime_10">Human Connection - 10 Minutes </option>
-        <option value="humanTime_15">Human Connection - 15 Minutes </option>
-        <option value="humanTime_20">Human Connection - 20 Minutes </option>
-        <option value="humanTime_30">Human Connection - 30 Minutes </option>
-        <option value="humanTime_60">Human Connection - 60 Minutes </option>
-        <option value="selfTime_5">Self Talk - 5 Minutes (Or Less)</option>
-        <option value="selfTime_10">Self Talk - 10 Minutes </option>
-        <option value="selfTime_15">Self Talk - 15 Minutes </option>
-        <option value="selfTime_20">Self Talk - 20 Minutes </option>
-        <option value="selfTime_60">Self Talk - 60 Minutes </option>
-        <option value="socialMediaTime_5">Social Media - 5 Minutes (Or Less)</option>
-        <option value="socialMediaTime_10">Social Media - 10 Minutes </option>
-        <option value="socialMediaTime_15">Social Media - 15 Minutes </option>
-        <option value="socialMediaTime_20">Social Media - 20 Minutes </option>
-        <option value="socialMediaTime_60">Social Media - 60 Minutes </option>
-    </select>
-    <br /><br /> 
-    <label for="bodilyGas">Body Release</label>
+    <label for="bodilyRelease">Body Release</label>
     <br />
     <select id="bodyRelease" name="bodyRelease" class="form-control">
         <option value="None">None</option>
-        <option value="Burp">Burp</option>
-        <option value="Fart">Fart</option>
-        <option value="Pimple">Pop Pimple</option>
-        <option value="Pee_Light">Pee - Light</option>
-        <option value="Pee_Heavy">Pee - Heavy</option>
-        <option value="Poop_Light">Poop - Light</option>
-        <option value="Poop_Heavy">Poop - Heavy</option>
-        <option value="Cough">Cough</option>
-        <option value="Clear_Throat">Clear Throat</option>
-        <option value="Cry">Crying</option>
-        <option value="Sneeze">Sneeze</option>        
-        <option value="Yawn">Yawn</option>
-        <option value="Vomit">Vomit</option>
-        <option value="Sweat">Sweat</option>
-        <option value="Phlegm">Phlegm</option>
-        <option value="Period_Light">Period-Light</option>
-        <option value="Period_Heavy">Period-Heavy</option>
-    </select>
-    <br /><br />     
-    <label for="activity">Activity</label>
-    <select id="activity" name="activity" class="form-control">
-        <option value="None">None</option>
-        <option value="MuscleCardio">Walking/Cardio</option>
-        <option value="Work">Work</option>
-        <option value="Study">Study</option>
-        <option value="TV">TV</option>
-        <option value="Sleep">Sleep</option>
-        <option value="Laugh">Laughing</option>
-        <option value="DeepBreath">Deep Breath</option>
-        <option value="Housework">Housework/Yardwork</option>
-        <option value="MuscleMuscle">Muscle Workout</option>        
-        <option value="Driving">Driving</option>
+        <option value="ForceableAirEscapesMouth">Forceable Air Escapes Mouth</option>
+        <option value="ForceableAirEscapesButt">Forceable Air Escapes Butt</option>
+        <option value="LiquidLeavesBody_Light">Liquid/Mucus Leaves Body - Light</option>
+        <option value="LiquidLeavesBody_Heavy">Liquid/Mucus Leaves Body - Heavy</option>
+        <option value="SolidLeavesBody_Heavy">Solid Leaves Body - Light</option>
+        <option value="SolidLeavesBody_Heavy">Solid Leaves Body - Heavy</option>
+        <option value="Muscle_Ache">Muscle Ache</option>
+        <option value="Itch">Itch</option>
         <option value="Other">Other - Notate</option>
     </select>
-    <br /><br /> 
-    <label for="activityminutes">Activity Minutes (Notate If Necessary)</label>
+    <br /><br />
+    <label for="activity">Activity That I Felt Metabolism Occur</label>
+    <select id="activity" name="activity" class="form-control">
+        <option value="AA_None">None</option>
+        <option value="WalkingCardio">Walking/Cardio</option>
+        <option value="ChairFocusWork">Chair Focus Work</option>
+        <option value="HumanConnection">Human Connection</option>
+        <option value="PetConnection">Pet Connection</option>
+        <option value="SelfTalk">Self Talk</option>
+        <option value="Sleep">Sleep</option>        
+        <option value="Hygiene">Hygiene</option>
+        <option value="MuscleEngagement">Muscle Engagement</option>
+        <option value="Driving">Driving</option>
+        <option value="BodyShake">Body Shakes</option>
+        <option value="DiaphramVocal">Vocal Diamphram Engagement (Yell/Laugh)</option>
+        <option value="ExaggeratedFacialExpression">Exaggerated Facial Expressions (Smile/Anger)</option>
+        <option value="Other">Other - Notate</option>
+    </select>
+    <br /><br />
+    <label for="activityIntensity">Activity Intensity</label>
+    <select id="activityIntensity" name="activityIntensity" class="form-control">
+        <option value="AA_None">None</option>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+    </select>
+    <br /><br />
+    <label for="activityminutes">Activity Minutes</label>
     <input type="text" id="activityminutes" name="activityminutes" class="form-control" />
-    <br /><br />
-    <label>How Much Are You Craving Food?</label>
-    <br />
-    <select id="craving" name="craving" class="form-control">
-        <option value="None">Already Tracked</option>
-        <option value="5">Will Drive To Get It / Need Food Now</option>
-        <option value="4">Will Eat In Next 10 Minutes</option>
-        <option value="3">Would Eat If Opportunity Arose</option>
-        <option value="2">Feeling Hungry, Can Wait</option>
-        <option value="1">Could Wait to Eat After 2 Hours</option>
-    </select>
-    <br /><br />
-    <label>How Are You Feeling Now?</label>
-    <select id="feeling" name="feeling" class="form-control">
-        <option value="None">Already Tracked</option>
-        <option value="5">Positive Spike</option>
-        <option value="4">Positive Outweighs Negative</option>
-        <option value="3">Positive And Negative Balance</option>
-        <option value="2">Negative Outweighs Positive</option>
-        <option value="1">Negative Spike</option>
-    </select>
     <br /><br />
     <label>Notes:</label>
     <br />
