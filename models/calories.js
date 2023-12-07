@@ -36,6 +36,9 @@ const CalorieSchema = new mongoose.Schema(
         activityIntensity: {
             type: String,
         },
+        emotionEnergy: {
+            type:String,
+        },
         note: {
             type: String,
         },

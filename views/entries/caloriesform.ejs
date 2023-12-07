@@ -23,25 +23,26 @@
     <br />
     <select id="bodyRelease" name="bodyRelease" class="form-control">
         <option value="None">None</option>
-        <option value="ForceableAirEscapesMouth">Forceable Air Escapes Mouth</option>
+        <option value="ForceableAirEscapesMouthNose">Forceable Air Escapes Mouth/Nose</option>
         <option value="ForceableAirEscapesButt">Forceable Air Escapes Butt</option>
         <option value="LiquidLeavesBody_Light">Liquid/Mucus Leaves Body - Light</option>
         <option value="LiquidLeavesBody_Heavy">Liquid/Mucus Leaves Body - Heavy</option>
         <option value="SolidLeavesBody_Light">Solid Leaves Body - Light</option>
         <option value="SolidLeavesBody_Heavy">Solid Leaves Body - Heavy</option>
         <option value="Itch">Itch</option>
+        <option value="Hygiene">Hygiene</option>
         <option value="Other">Other - Notate</option>
     </select>
     <br /><br />
     <label for="activity">Activity</label>
     <select id="activity" name="activity" class="form-control">
         <option value="AA_None">None</option>
-        <option value="SittingResting">Sitting/Resting</option>      
+        <option value="SittingResting">Sitting/Resting</option>  
+        <option value="LegMovement">Leg Movement</option>    
+        <option value="ArmMovement">Arm Movement</option> 
         <option value="HumanConnection">Human Connection</option>
         <option value="PetConnection">Pet Connection</option>
-        <option value="SelfTalk">Self Talk</option>
-        <option value="Sleep">Sleep</option>        
-        <option value="Hygiene">Hygiene</option>
+        <option value="SelfTalk">Self Talk</option>          
         <option value="Other">Other - Notate</option>
     </select>
     <br /><br />
@@ -50,13 +51,27 @@
         <option value="AA_None">None</option>
         <option value="5">Movement Produces Deep Breathing And Pain</option>
         <option value="4">Movement Produces Deep Breathing</option>
-        <option value="3">Moderate Muscle Movement</option>
-        <option value="2">Walking/Light Cardio/Vibration</option>
+        <option value="3">Feel Metabolism Muscle Movement</option>
+        <option value="2">Light Cardio/Vibration</option>
         <option value="1">Sitting, Little Muscle Movement</option>
     </select>
     <br /><br />
     <label for="activityminutes">Activity Minutes</label>
     <input type="text" id="activityminutes" name="activityminutes" class="form-control" />
+    <br /><br />
+    <label for="emotionEnergy">Where Is Your Emotion Energy?</label>
+    <select id="emotionEnergy" name="emotionEnergy" class="form-control">
+        <option value="AA_None">None</option>
+        <option value="Head">Head</option>
+        <option value="Shoulder">Shoulder</option>
+        <option value="Torso">Torso</option>
+        <option value="Stomach">Stomach</option>
+        <option value="Butt">Butt</option>
+        <option value="Genital">Genital</option>
+        <option value="Thigh">Thigh</option>
+        <option value="Legs">Stomach</option>
+        <option value="Feet">Feet</option>        
+    </select>
     <br /><br />
     <label>Notes:</label>
     <br />

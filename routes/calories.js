@@ -15,6 +15,7 @@ router.get('/:id', async (req, res, next) => {
   //, { calorie: calorie })
 })
 
+//https://www.pnas.org/doi/10.1073/pnas.1321664111
 router.post('/', async (req, res) => {
   let calorie = new Calories({
     date: req.body.date,
@@ -27,6 +28,7 @@ router.post('/', async (req, res) => {
     sun: req.body.sun,
     activity: req.body.activity,
     bodyRelease: req.body.bodyRelease,
+    emotionEnergy: req.body.emotionEnergy,
     note: req.body.note
   })
   try {
