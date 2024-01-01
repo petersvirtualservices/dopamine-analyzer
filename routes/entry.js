@@ -2,10 +2,14 @@
 
 const express = require('express');
 const router = express.Router();
-const Calories = require('../models/calories');
+const Calories = require('../models/entry');
 
 router.get('/new', (req, res) => {
   res.render('entries/newcalories', { calorie: new Calories() });
+});
+
+router.get('/measurement', (req, res) => {
+  res.render('entries/newmeasurement', { calorie: new Calories() });
 });
 
 router.get('/:id', async (req, res, next) => {
@@ -19,17 +23,20 @@ router.get('/:id', async (req, res, next) => {
 router.post('/', async (req, res) => {
   let calorie = new Calories({
     date: req.body.date,
+    measurementType: req.body.measurementType, 
+    measurementAmount: req.body.measurementAmount,
+    bodyRelease: req.body.bodyRelease,
+    emotionEnergy_Head: req.body.emotionEnergy_Head,
+    emotionEnergy_ShoulderTorsoBack: req.body.emotionEnergy_ShoulderTorsoBack,
+    emotionEnergy_Arm: req.body.emotionEnergy_Arm,
+    emotionEnergy_StomachButtGenital: req.body.emotionEnergy_StomachButtGenital,
+    emotionEnergy_Leg: req.body.emotionEnergy_Leg,   
+    activityminutes: req.body.activityminutes,     
     food: req.body.food,
     water: req.body.water,
     servings: req.body.servings,
     foodLength: req.body.foodLength,
-    activityminutes: req.body.activityminutes,
-    activityIntensity: req.body.activityIntensity,
-    sun: req.body.sun,
-    activity: req.body.activity,
-    bodyRelease: req.body.bodyRelease,
-    emotionEnergy: req.body.emotionEnergy,
-    note: req.body.note
+    note: req.body.note,  
   })
   try {
     calorie = await calorie.save();

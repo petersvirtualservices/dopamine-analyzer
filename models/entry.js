@@ -1,11 +1,38 @@
 const mongoose = require("mongoose");
 
-const CalorieSchema = new mongoose.Schema(
+const EntrySchema = new mongoose.Schema(
     {
         date: {
             type: String,
             default: Date.now()
         },
+        measurementType: {
+            type: String,
+        },
+        measurementAmount: {
+            type: String,
+        },
+        emotionEnergy_Head: {
+            type: String,
+        }, 
+        emotionEnergy_ShoulderTorsoBack: {
+            type: String,
+        },
+        emotionEnergy_Arm: {
+            type: String,
+        },
+        emotionEnergy_StomachButtGenital: {
+            type: String,
+        },
+        emotionEnergy_Leg: {
+            type: String,
+        },
+        bodyRelease: {
+            type: String,
+        },
+        activityminutes: {
+            type: String,
+        }, 
         food: {
             type: String,
         },
@@ -17,28 +44,7 @@ const CalorieSchema = new mongoose.Schema(
         },
         servings: {
             type: String,
-        },
-        activityminutes: {
-            type: String,
-        },
-        bodyRelease: {
-            type: String,
-        },
-        sun: {
-            type: String,
-        },
-        sleep: {
-            type: String,
-        },
-        activity: {
-            type: String,
-        },
-        activityIntensity: {
-            type: String,
-        },
-        emotionEnergy: {
-            type:String,
-        },
+        },        
         note: {
             type: String,
         },
@@ -46,4 +52,4 @@ const CalorieSchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("calorie", CalorieSchema);
+module.exports = mongoose.model("entrie", EntrySchema);

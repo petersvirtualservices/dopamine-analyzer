@@ -2,10 +2,8 @@ const express = require('express');
 const app = express();
 const mongoose = require("mongoose");
 const path = require('path');
-const caloriesRouter = require('./routes/calories');
-const Calorie = require('./models/calories');
-const measurementRouter = require('./routes/measurement');
-const Measurement = require('./models/measurements');
+const entryRouter = require('./routes/entry');
+const Entry = require('./models/entry');
 const add_foodRouter = require('./routes/add_food');
 const Add_Food = require('./models/add_food');
 var methodOverride = require('method-override');
@@ -15,8 +13,7 @@ var MongoClient = require('mongodb').MongoClient;
 const db = process.env.DATABASE || "mongodb+srv://cpeters:FunnyG0y@analysis.roepm1h.mongodb.net/?retryWrites=true&w=majority";
 
 app.use(express.urlencoded({extended:false}));
-app.use('/calories',caloriesRouter);
-app.use('/measurement',measurementRouter);
+app.use('/calories',entryRouter);
 app.use('/add_food',add_foodRouter);
 app.use(methodOverride('_method'));
 
@@ -41,14 +38,9 @@ app.get('/', async (req, res) => {
 
 
 
-app.get('/caloriesShow', async (req, res) => {
-  const activities = await Calorie.find().sort({ date: 'desc' })
-  res.render('entries/caloriesindex', { measurements: measurements })
-})
-
-// app.get('/measurements', async (req, res) => {
-//   const measurements = await Measurement.find().sort({ date: 'desc' })
-//   res.render('entries/measurementindex', { measurements: measurements })
+// app.get('/caloriesShow', async (req, res) => {
+//   const activities = await Calorie.find().sort({ date: 'desc' })
+//   res.render('entries/caloriesindex', { measurements: measurements })
 // })
 
 // app.get('/add_food', async (req, res) => {
@@ -59,5 +51,5 @@ app.get('/caloriesShow', async (req, res) => {
 
 var port = process.env.PORT || 8080;
 app.listen(port, () => {
-    console.log("Server started.");
+    console.log(`Server started on port ${port}.`);
 });

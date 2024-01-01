@@ -1,0 +1,31 @@
+<div class="form-group">
+  
+    <label>When Did You Do This?</label>
+    <br />
+    <input type="datetime-local" id="date" name="date" class="form-control" />
+    <br />
+    <label for="measurementType">Measurement Type</label>
+    <select id="measurementType" name="measurementType" class="form-control">
+      <option value="None">None</option>
+      <option value="Weight">Weight</option>
+      <option value="Bloodsugar">Bloodsugar</option>
+      <option value="SystolicBP">SystolicBP</option>
+      <option value="DystolicBP">DystolicBP</option>
+      <option value="Neck">Neck</option>
+      <option value="Chest">Chest</option>
+      <option value="Hip">Hip</option>
+      <option value="Waist">Waist</option>
+      <option value="Thigh">Thigh</option>
+      <option value="Calf">Calf</option>
+  </select>
+  <br/>
+  <span>Measurement Number <input type="text" id="measurementAmount" class="small" name="measurementAmount" class="form-control" /></span>
+  <br /><br />
+    <label>Notes:</label>
+    <br />
+    <textarea type="text" id="note" name="note" class="form-control"></textarea>
+    <br /><br />
+</div>
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Submit</button>
+<br /><br />
