@@ -30,7 +30,19 @@ const EntrySchema = new mongoose.Schema(
         bodyRelease: {
             type: String,
         },
-        activityminutes: {
+        clothing: {
+            type: String,
+        }, 
+        LifeConnection: {
+            type: String,
+        }, 
+        ComfortableStretching: {
+            type: String,
+        }, 
+        UVRays: {
+            type: String,
+        }, 
+        UnconsciousMovement: {
             type: String,
         }, 
         food: {
@@ -52,4 +64,4 @@ const EntrySchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("entrie", EntrySchema);
+module.exports = mongoose.model("en5trie", EntrySchema);
