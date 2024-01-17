@@ -60,5 +60,7 @@ router.post('/', async (req, res, next) => {
     req.calorie = await Calories.findById(req.params.id);
   })
 
+//https://www.pnas.org/doi/pdf/10.1073/pnas.1321664111
+//This article shows the emotional energy.  Previous months have shown that the emotions tied to the stomach have lowered my chances of losing weight and vice versa.
 
 module.exports = router;
