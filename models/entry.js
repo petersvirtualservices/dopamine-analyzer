@@ -44,6 +44,9 @@ const EntrySchema = new mongoose.Schema(
         }, 
         UnconsciousMovement: {
             type: String,
+        },
+        sleep: {
+            type: String,
         }, 
         food: {
             type: String,
