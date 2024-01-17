@@ -67,4 +67,4 @@ const EntrySchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("01012024entrie", EntrySchema);
+module.exports = mongoose.model("01172024entrie", EntrySchema);
