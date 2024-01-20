@@ -12,39 +12,12 @@ const EntrySchema = new mongoose.Schema(
         measurementAmount: {
             type: String,
         },
-        emotionEnergy_Head: {
+        excretion: {
             type: String,
         }, 
-        emotionEnergy_ShoulderTorsoBack: {
-            type: String,
-        },
-        emotionEnergy_Arm: {
-            type: String,
-        },
-        emotionEnergy_StomachButtGenital: {
-            type: String,
-        },
-        emotionEnergy_Leg: {
-            type: String,
-        },
-        bodyRelease: {
-            type: String,
-        },
-        clothing: {
+        bodySignals: {
             type: String,
         }, 
-        LifeConnection: {
-            type: String,
-        }, 
-        ComfortableStretching: {
-            type: String,
-        }, 
-        UVRays: {
-            type: String,
-        }, 
-        UnconsciousMovement: {
-            type: String,
-        },
         sleep: {
             type: String,
         }, 
@@ -67,4 +40,4 @@ const EntrySchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-module.exports = mongoose.model("01172024entrie", EntrySchema);
+module.exports = mongoose.model("01192024entrie", EntrySchema);
