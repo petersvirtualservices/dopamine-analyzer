@@ -31,7 +31,8 @@ router.post('/', async (req, res) => {
     food: req.body.food,
     water: req.body.water,
     servings: req.body.servings,
-    foodLength: req.body.foodLength,    
+    foodLength: req.body.foodLength, 
+    mealTime: req.body.mealTime,
     note: req.body.note,  
   })
   try {

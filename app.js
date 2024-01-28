@@ -10,7 +10,7 @@ var methodOverride = require('method-override');
 
 
 var MongoClient = require('mongodb').MongoClient;
-const db = process.env.DATABASE
+const db = process.env.DATABASE;
 
 app.use(express.urlencoded({extended:false}));
 app.use('/calories',entryRouter);

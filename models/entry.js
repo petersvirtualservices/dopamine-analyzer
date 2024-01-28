@@ -27,6 +27,9 @@ const EntrySchema = new mongoose.Schema(
         foodLength: {
             type: String,
         },
+        mealTime: {
+            type: String,
+        },
         water: {
             type: String,
         },
