@@ -10,7 +10,7 @@ var methodOverride = require('method-override');
 
 
 var MongoClient = require('mongodb').MongoClient;
-const db = process.env.DATABASE || "mongodb+srv://cpeters:FunnyG0y@analysis.roepm1h.mongodb.net/?retryWrites=true&w=majority";
+const db = process.env.DATABASE
 
 app.use(express.urlencoded({extended:false}));
 app.use('/calories',entryRouter);
@@ -34,14 +34,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', async (req, res) => {
   res.render('entries/index')
-})
-
-
-
-// app.get('/caloriesShow', async (req, res) => {
-//   const activities = await Calorie.find().sort({ date: 'desc' })
-//   res.render('entries/caloriesindex', { measurements: measurements })
-// })
+});
 
 // app.get('/add_food', async (req, res) => {
 //   const add_foods = await Add_Food.find().sort({ date: 'desc' });
